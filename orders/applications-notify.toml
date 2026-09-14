@@ -1,0 +1,8 @@
+[order]
+description = "Mail the human operator once for each new pending credential application"
+trigger = "condition"
+check = "pangenome-town authority applications --state pending --check"
+check_timeout = "20s"
+exec = "$ORDER_DIR/scripts/applications-notify.sh"
+timeout = "2m"
+scope = "city"

@@ -1,0 +1,8 @@
+{
+  "accreditations": [],
+  "id": "https://w3id.org/academic-wasteland/camelot/issuers/ethics-council",
+  "name": "Wasteland Ethics Council (demo)",
+  "publicKey": "ed25519:seGCer9_zlMqtNycVI19l-gW1ppLlR8k_sR4E7CSiI8",
+  "role": "AccreditationCouncil",
+  "slug": "ethics-council"
+}

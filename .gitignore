@@ -1,0 +1,18 @@
+# Gas City
+.gc/
+.beads/*
+!.beads/identity.toml
+hooks/
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/
+.dolt-backup/
+.opencode/
+.beads/
+AGENTS.md
+
+# Registrar runtime state (applications carry personal purposes; credentials are held by their holders)
+registry/applications/
+registry/credentials/
+registry/revoked.json

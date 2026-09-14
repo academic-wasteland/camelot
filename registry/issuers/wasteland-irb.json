@@ -1,0 +1,40 @@
+{
+  "accreditations": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/academic-wasteland/credentials/v0.1"
+      ],
+      "credentialStatus": {
+        "id": "https://w3id.org/academic-wasteland/camelot/status/01b47cca-9d0a-476f-b30e-41f04d9ecdd9",
+        "type": "RegistrarStatus"
+      },
+      "credentialSubject": {
+        "id": "https://w3id.org/academic-wasteland/camelot/issuers/wasteland-irb",
+        "publicKey": "ed25519:ejB8bUjgTWS9bHJtVs-wKLRhf77aY0zH6F2TS11d6z8",
+        "roles": [
+          "EthicsBoard"
+        ]
+      },
+      "id": "https://w3id.org/academic-wasteland/camelot/credentials/01b47cca-9d0a-476f-b30e-41f04d9ecdd9",
+      "issuer": "https://w3id.org/academic-wasteland/camelot/issuers/ethics-council",
+      "proof": {
+        "created": "2026-09-14T08:22:00Z",
+        "proofValue": "QrEMUNZ0ShA6cDzbILS8OCi9jpKpOYjYJbThWyA6IQ6P8FDdoSwBGyubBwnpNen-JgCXKsQF4TJ9TRdkByMZAw",
+        "type": "PangenomeTownEd25519Jcs2026",
+        "verificationMethod": "https://w3id.org/academic-wasteland/camelot/issuers/ethics-council#key-1"
+      },
+      "type": [
+        "VerifiableCredential",
+        "Accreditation"
+      ],
+      "validFrom": "2026-09-14T08:22:00Z",
+      "validUntil": "2027-09-14T08:22:00Z"
+    }
+  ],
+  "id": "https://w3id.org/academic-wasteland/camelot/issuers/wasteland-irb",
+  "name": "Wasteland Research Ethics Board (demo)",
+  "publicKey": "ed25519:ejB8bUjgTWS9bHJtVs-wKLRhf77aY0zH6F2TS11d6z8",
+  "role": "EthicsBoard",
+  "slug": "wasteland-irb"
+}

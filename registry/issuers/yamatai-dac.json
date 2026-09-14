@@ -1,0 +1,40 @@
+{
+  "accreditations": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/academic-wasteland/credentials/v0.1"
+      ],
+      "credentialStatus": {
+        "id": "https://w3id.org/academic-wasteland/camelot/status/7be69de8-93ce-485e-846b-0d2b28931b47",
+        "type": "RegistrarStatus"
+      },
+      "credentialSubject": {
+        "id": "https://w3id.org/academic-wasteland/camelot/issuers/yamatai-dac",
+        "publicKey": "ed25519:N_tu4JvVwwi3x3HIztfiL5I54TcAHijnCAktJbwlAEk",
+        "roles": [
+          "DataAccessCommittee"
+        ]
+      },
+      "id": "https://w3id.org/academic-wasteland/camelot/credentials/7be69de8-93ce-485e-846b-0d2b28931b47",
+      "issuer": "https://w3id.org/academic-wasteland/camelot/issuers/ethics-council",
+      "proof": {
+        "created": "2026-09-14T08:22:01Z",
+        "proofValue": "3LgN-96wWv7Fn5rZyvNqFyi0PlzsPqbrlAcE4jEqr1YQ7IMmM8uGt4Bv9e0xqlJ14wlAeKytoDtUPjsVw4XyBA",
+        "type": "PangenomeTownEd25519Jcs2026",
+        "verificationMethod": "https://w3id.org/academic-wasteland/camelot/issuers/ethics-council#key-1"
+      },
+      "type": [
+        "VerifiableCredential",
+        "Accreditation"
+      ],
+      "validFrom": "2026-09-14T08:22:01Z",
+      "validUntil": "2027-09-14T08:22:01Z"
+    }
+  ],
+  "id": "https://w3id.org/academic-wasteland/camelot/issuers/yamatai-dac",
+  "name": "Yamatai Data Access Committee (demo)",
+  "publicKey": "ed25519:N_tu4JvVwwi3x3HIztfiL5I54TcAHijnCAktJbwlAEk",
+  "role": "DataAccessCommittee",
+  "slug": "yamatai-dac"
+}

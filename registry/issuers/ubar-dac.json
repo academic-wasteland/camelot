@@ -1,0 +1,40 @@
+{
+  "accreditations": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://w3id.org/academic-wasteland/credentials/v0.1"
+      ],
+      "credentialStatus": {
+        "id": "https://w3id.org/academic-wasteland/camelot/status/6dd70cbe-6972-49ea-a4cd-d6be4656de1d",
+        "type": "RegistrarStatus"
+      },
+      "credentialSubject": {
+        "id": "https://w3id.org/academic-wasteland/camelot/issuers/ubar-dac",
+        "publicKey": "ed25519:1m6S8xbIuEACd6-dbBG8Gq5cUJ3Wfc6jbENz_adOS7o",
+        "roles": [
+          "DataAccessCommittee"
+        ]
+      },
+      "id": "https://w3id.org/academic-wasteland/camelot/credentials/6dd70cbe-6972-49ea-a4cd-d6be4656de1d",
+      "issuer": "https://w3id.org/academic-wasteland/camelot/issuers/ethics-council",
+      "proof": {
+        "created": "2026-09-14T08:22:00Z",
+        "proofValue": "JuL0ozzZPacnivNDWWBHiZhI6NyHCuVkS5etfajmWdtQIij6XjqEZXLmmJFyxlTykWaND2G1w-MoGPYxnGnIAQ",
+        "type": "PangenomeTownEd25519Jcs2026",
+        "verificationMethod": "https://w3id.org/academic-wasteland/camelot/issuers/ethics-council#key-1"
+      },
+      "type": [
+        "VerifiableCredential",
+        "Accreditation"
+      ],
+      "validFrom": "2026-09-14T08:22:00Z",
+      "validUntil": "2027-09-14T08:22:00Z"
+    }
+  ],
+  "id": "https://w3id.org/academic-wasteland/camelot/issuers/ubar-dac",
+  "name": "Ubar Data Access Committee (demo)",
+  "publicKey": "ed25519:1m6S8xbIuEACd6-dbBG8Gq5cUJ3Wfc6jbENz_adOS7o",
+  "role": "DataAccessCommittee",
+  "slug": "ubar-dac"
+}

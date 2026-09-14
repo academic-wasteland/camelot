@@ -1,0 +1,26 @@
+[pack]
+name = "camelot"
+schema = 2
+description = "Authority town: demo ethics board, data access committees, and accreditation council"
+
+[imports]
+[imports.bd]
+source = "https://github.com/gastownhall/gascity/tree/main/examples/bd"
+version = "sha:f895c0ff47d6ee9334ed282a416387eb5b084d24"
+[imports.core]
+source = "https://github.com/gastownhall/gascity/tree/main/internal/bootstrap/packs/core"
+version = "sha:f895c0ff47d6ee9334ed282a416387eb5b084d24"
+
+[[service]]
+name = "envoy"
+kind = "proxy_process"
+publish_mode = "private"
+state_root = ".gc/services/envoy"
+
+[service.process]
+command = ["scripts/run-envoy.sh"]
+health_path = "/healthz"
+
+[service.publication]
+visibility = "private"
+hostname = "envoy"

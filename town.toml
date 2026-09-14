@@ -1,0 +1,47 @@
+[town]
+name = "camelot"
+display = "Camelot"
+kind = "authority"
+rig = "camelot-rig"
+citation = "Demo authorities for The Academic Wasteland (BioHackathon 2026). Invented names; they do not represent any real ethics board, data access committee, or institution."
+
+[town.peers]
+ubar = "ubar"
+yamatai = "yamatai"
+
+[exchange]
+db = "../data/exchange.db"
+supervisor_url = "http://127.0.0.1:8372"
+state_dir = ".gc/town"
+
+[authority]
+# Public issuer records (keys, accreditations) live in registry/issuers and are committed.
+# Applications, issued credentials, and the revocation list are runtime state (gitignored).
+registry = "registry"
+# Issuer private keys: outside every repository, mode 0600.
+key_dir = "~/.gc/authority/camelot"
+# The human who decides. Residents recommend; only this operator approves, denies, or revokes.
+operator = "https://orcid.org/0000-0001-8149-5890"
+
+[[authority.issuers]]
+slug = "ethics-council"
+name = "Wasteland Ethics Council (demo)"
+role = "AccreditationCouncil"
+
+[[authority.issuers]]
+slug = "wasteland-irb"
+name = "Wasteland Research Ethics Board (demo)"
+role = "EthicsBoard"
+accredited_by = "ethics-council"
+
+[[authority.issuers]]
+slug = "ubar-dac"
+name = "Ubar Data Access Committee (demo)"
+role = "DataAccessCommittee"
+accredited_by = "ethics-council"
+
+[[authority.issuers]]
+slug = "yamatai-dac"
+name = "Yamatai Data Access Committee (demo)"
+role = "DataAccessCommittee"
+accredited_by = "ethics-council"

@@ -1,0 +1,6 @@
+description = "Dagny, reviewer for the Ubar and Yamatai Data Access Committees. Reviews pending DataAccessAuthorization applications in Camelot and recommends a decision to the human operator. Runs on the lab's local Qwen. Cannot issue credentials."
+provider = "qwen"
+upstream = "vllm"
+idle_timeout = "30m"
+max_active_sessions = 1
+nudge = "Run `gc mail check` and `pangenome-town authority applications --state pending`. Review every pending DataAccessAuthorization application addressed to ubar-dac or yamatai-dac as your instructions say, mail your recommendation to human, then run `gc hook --claim --drain-ack --json` and do any work it returns."

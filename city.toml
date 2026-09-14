@@ -1,0 +1,25 @@
+# Camelot: the authority town of The Academic Wasteland.
+# Residents run on the lab's local Qwen (vLLM on unimatrix01) only; never a Claude subscription.
+
+[workspace]
+
+[workspace.env]
+PT_TOWN_TOML = "/home/leechuck/Public/software/academic-wasteland/camelot/town.toml"
+
+[providers.qwen]
+base = "builtin:opencode"
+ready_delay_ms = 8000
+
+[providers.qwen.env]
+OPENCODE_CONFIG_CONTENT = '{"model": "vllm/qwen3.8-27b", "provider": {"vllm": {"npm": "@ai-sdk/openai-compatible", "name": "vLLM on unimatrix01", "options": {"baseURL": "http://unimatrix01.kaust.edu.sa:8000/v1", "apiKey": "{env:VLLM_API_KEY}"}, "models": {"qwen3.8-27b": {"name": "Qwen3.8 27B (vLLM)", "tool_call": true}}}}}'
+
+[upstreams.vllm]
+api_key = "$VLLM_API_KEY"
+api_key_env = "VLLM_API_KEY"
+
+[agent_defaults]
+provider = "qwen"
+upstream = "vllm"
+
+[api]
+bind = "127.0.0.1"
