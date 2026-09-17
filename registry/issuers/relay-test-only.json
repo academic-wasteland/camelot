@@ -1,0 +1,8 @@
+{
+  "accreditations": [],
+  "id": "https://w3id.org/academic-wasteland/camelot/issuers/relay-test-only",
+  "name": "Relay interoperability test ONLY (no real qualification)",
+  "publicKey": "ed25519:hj1la8aZnO6aF8BbwqRhQ5G9VxrmEeudSgn-375rbLA",
+  "role": "SyntheticTestIssuer",
+  "slug": "relay-test-only"
+}

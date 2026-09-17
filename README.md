@@ -81,3 +81,23 @@ pangenome-town --town ../yamatai/town.toml rcp submit --to ubar --kind allele-fr
 Ubar verifies signatures, holder binding, validity, and revocation in code; the reasoner then decides whether
 the issuers sit under Ubar's trust anchor, whether the approved scope covers the task, and whether the output
 may be released.
+
+## Independent-town applications and signed status
+
+The live relay bridge now offers `credential-challenge`, `credential-apply`,
+`credential-fetch` and `credential-status`. See the
+[client and verifier guide](https://github.com/academic-wasteland/wasteland-starter-pack/blob/main/docs/credentials.md).
+Requesters prove control of their own keys; Camelot never needs their private keys.
+Relay applications require local approval with `--evidence-ref private-review:CASE-ID`.
+Real qualifications require manual evidence review, and grants must stay within
+what that evidence supports. Review references remain under the private key
+directory, outside the public credential.
+
+Signed status replies have a maximum 60-second lifetime. Receivers must configure
+trusted issuer keys, reject unknown/stale/revoked status, and check again before
+releasing results. The catalogue and issuer directory do not grant trust.
+
+`relay-test-only` is an **unaccredited synthetic interoperability issuer**, not a
+real qualification authority. The live Ubar → Camelot → Yamatai verification on
+2026-09-17 used a `SyntheticRelayTestOnly` credential, observed active then revoked
+status, and left that credential revoked. Do not trust this issuer for real access.
